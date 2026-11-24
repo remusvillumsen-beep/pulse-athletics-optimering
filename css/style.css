@@ -124,21 +124,6 @@ transform: scale(1.03);
  filter: saturate(0.7);
 }
 
-/* Overlay ovenpå videoen */
-
-
- .hero-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    90deg,
-    rgba(247, 247, 220, 0.92) 0%,
-    rgba(247, 247, 220, 0.72) 38%,
-    rgba(247, 247, 220, 0.28) 70%,
-    rgba(247, 247, 220, 0.12) 100%
-  );
-}
 
 /* Boksen med alt teksten */
 .hero-content {
