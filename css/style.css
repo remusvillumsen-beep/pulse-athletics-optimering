@@ -79,7 +79,7 @@ h1, h2, h3 {
 transform: scale(1.03);
 }
 
-#menu {
+.navigation-menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -89,7 +89,7 @@ transform: scale(1.03);
     background-color: var(--darkgrey);
 }
 
-#menu a {
+.navigation-menu a {
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -97,7 +97,7 @@ transform: scale(1.03);
 
 }
 
-#menu a:hover {
+.navigation-menu a:hover {
     text-decoration: underline;
     font-size: 17px;
 }
