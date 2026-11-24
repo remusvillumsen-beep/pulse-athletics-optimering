@@ -1,0 +1,801 @@
+/* style reset */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+  --black: #111111;
+  --cream: #F7F7DC;
+  --green: #2D5F3D;
+  --grey: #666666;
+  --darkgrey: #272727;
+  --gradientgreen1: #5EAB5E;
+  --gradientgreen2: #3B7D3B;
+  --white: #ffffff;
+}
+
+
+body {
+  background: var(--cream);
+  color: var(--black);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 500;
+}
+
+/*-----------*/
+/* header */
+/*-----------*/
+
+#header-top {
+    position: relative;
+    height: 95px;
+    background: linear-gradient(90deg, var(--gradientgreen1) 0%, var(--gradientgreen2) 49.52%, var(--gradientgreen1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pulse-logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+   top: 2%;
+    width: 200px;
+    height: auto;
+}
+
+.search-tools {
+    display: flex;
+    align-items: flex-end;
+    right: 30px;
+    top: 50%; 
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  gap: 20px;
+}
+
+.search-tools img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.search-tools :hover{
+transform: scale(1.03);
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 7px;
+    list-style: none;
+    background-color: var(--darkgrey);
+}
+
+#menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: medium;
+
+}
+
+#menu a:hover {
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+/*---------------*/
+/* HERO SECTION */
+/*-------------*/
+
+.hero-section {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0 20px 70px;
+}
+
+/* Videoen */
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+ opacity: 1;
+ filter: saturate(0.7);
+}
+
+/* Overlay ovenpå videoen */
+
+
+ .hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(247, 247, 220, 0.92) 0%,
+    rgba(247, 247, 220, 0.72) 38%,
+    rgba(247, 247, 220, 0.28) 70%,
+    rgba(247, 247, 220, 0.12) 100%
+  );
+}
+
+/* Boksen med alt teksten */
+.hero-content {
+    left: 40px;
+    top: 60px;
+  position: absolute;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 0.95;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.accent-tekst {
+  color: var(--green);
+  font-weight: 800;
+}
+
+.hero-content .pulse-text {
+  font-size: 17px;
+  color: var(--darkgrey);
+  margin-bottom: 20px;
+  line-height: 1.5;
+  
+}
+
+.hero-content .price {
+  font-size: 28px;
+  margin-bottom: 20px;
+  line-height: 2;
+  color: #0e8425;
+  font-weight: 800;
+}
+
+.hero-content h1,
+.hero-content .pulse-text,
+.hero-content .price {
+  
+  font-style: bold;
+}
+
+/* Billedet med de tre ure */
+.hero-watches {
+  position: absolute;
+  top: 260px;
+  right: 200px;
+  max-width: 420px;
+  z-index: 2;
+}
+
+.hero-watches img {
+    margin-top: 30px;
+  width: 100%;
+  filter: drop-shadow(0 25px 45px rgba(0,0,0,0.25));
+  }
+
+
+/*CTA KNAP*/
+
+#cta-button {
+  background:linear-gradient(90deg, var(--gradientgreen1) 0%, var(--gradientgreen2) 49.52%, var(--gradientgreen1) 100%);
+  border: none;
+  border-radius: 20px;
+  padding: 0; 
+  margin-top: 20px;
+}
+
+
+#cta-button a {
+    display: inline-block;
+    color: white; 
+    text-decoration:none;
+    padding: 18px 40px ;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
+/* ---------- SPECS-STRIP  ---------- */
+
+.specs-strip {
+    background-color: rgba(45, 95, 61, 0.06);
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 0 60px 0;
+    gap: 30px;
+    margin-bottom: 2px;
+    border-top: 2px solid rgba(45, 95, 61, 0.15);
+    border-bottom: 2px solid rgba(45, 95, 61, 0.15);
+}
+
+.specs-strip li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 4px;
+  padding: 20px 0;
+  border-right: 1px solid rgba(45, 95, 61, 0.2);
+}
+
+.specs-strip li:last-child {
+  border-right: none;
+}
+
+.specs-strip img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+ .spec-tal {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+  color: var(--green);
+}
+
+.spec-label {
+  font-size: 13px;
+  color: var(--grey);
+  margin: 4px 0 0 0;
+}
+
+
+/*------------------ */
+/*    SECTION 2     */
+/*-------------------*/
+
+
+/* ---------- VENSTRE KOLONNE ---------- */
+
+.ur-features {
+  background-color: var(--cream);
+  padding: 90px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin: 0 auto;
+
+}
+
+.ur-venstre header{ 
+margin-bottom: 30px;}
+
+
+#pulse-label {
+  font-size: 40px;
+    white-space: nowrap;
+    color: var(--green);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+#uret-der {
+  font-size: 32px;
+  margin-bottom: 20px;
+ white-space: nowrap;
+}
+
+.intro {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 150px;
+  max-width: 400px;
+  color: var(--grey);
+  text-decoration:none;
+}
+
+/* ---------- BILLEDET AF URENE ---------- */
+.ur-billede img {
+ width: 100%;
+  max-width: 680px;
+  display: block;
+   filter: drop-shadow (0 25px 50px rgba(158, 155, 155, 0.725));
+}
+
+/* ---------- HØJRE KOLONNE: -------- */
+
+/* ---------- FEATURE-LISTE  ---------- */
+
+.feature-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-liste li {
+  font-size: 15px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  line-height: 2;
+  color: var(--grey);
+ }
+
+.feature-liste li:first-child {
+  border-top: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+.feature-liste li h4 {
+  font-size: 16px;
+  margin: 0 0 4px 0;
+  color: var(--black);
+}
+
+/* ---------- "VIS FLERE DETALJER"  ---------- */
+.flere-features {
+  margin-top: 10px;
+}
+
+.flere-features summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--green);
+  font-size: 14px;
+  list-style: none;
+  padding: 16px 0;
+}
+
+.flere-features summary::-webkit-details-marker {
+  display: none;
+}
+
+.flere-features summary::before {
+  content: "+";
+}
+
+.flere-features[open] summary::before {
+  content: "– ";
+}
+
+.flere-features .feature-liste li {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.flere-features .feature-liste li h4 {
+  font-size: 14px; 
+}
+
+/* ---------- "KØB URET I DAG..." OVERSKRIFT ---------- */
+.kob-nu-overskrift {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-decoration: none;
+
+}
+
+/* ---------- APP ---------- */
+
+.app-connect {
+background-color: var(--green);
+border-radius: 28px;
+padding: 70px 60px;
+max-width: 1300px;
+margin: 0 auto 5% auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  gap: 60px;
+}
+/* ---------- VENSTRE SIDE: tekst ---------- */
+
+.app-connect-tekst {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* bluetooth-ikonet */
+.bluetooth-tekst {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--cream);
+
+  background-color: rgba(247, 247, 220, 0.15);
+  padding: 8px 16px;
+  border-radius: 100px;   
+
+  margin: 0 0 22px 0;
+}
+
+.bluetooth-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.app-connect-tekst h3 {
+  color: var(--cream);
+  font-size: 32px;
+  margin-bottom: 26px;
+  max-width: 380px;
+}
+
+.download-knap:hover {
+text-decoration: underline;
+}
+
+.download-knap {
+  display: inline-block;
+  background-color: var(--cream);
+  color: var(--green);
+
+  padding: 16px 34px;
+  border-radius: 100px;
+
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* ---------- HØJRE SIDE: telefonbillede ---------- */
+
+.app-connect-telefon img {
+    margin-right: 90px;
+  width: 200px;
+  filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.3));
+}
+
+
+/* BRUGER ANMELDELSER*/
+
+.review-section{
+max-width: 1300px;
+    padding: 0 60px;
+    margin: 0 auto 60px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+  
+
+.reviews-header {
+  grid-column: 1 / -1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   
+}
+
+/* Trustpilot billede */
+
+.trustpilot{
+order: 2;
+width: 130px;
+height: 60px;
+}
+
+.trustpilot:hover {
+    transform: scale(1.03);
+}
+
+/* Overskrift */
+
+.review-section h3 {
+    order: 1;
+    margin-bottom: 5px;
+    font-size: 20px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    color: var(--green);
+    font-weight: 700;
+}
+
+.review-section h3 img {
+  width: 40px;
+  height: 40px;
+}
+
+
+/* Hver anmeldelse */
+
+.review-section article {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+/* Stjernerne */
+
+.stars {
+    gap: 3px;
+    margin-bottom: 16px;
+}
+
+/* Hver enkelt stjerne */
+
+.review-section .stars img {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+/* Teksten under stjernerne */
+.review-section article p:not(.stars) {
+  font-size: 15px;
+  color: var(--black);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.review-section article strong {
+  font-size: 13px;
+  color: var(--grey);
+  font-weight: 600;
+}
+
+
+
+/* -------------------- */
+/* HELE FOOTEREN */
+/* -------------------- */
+
+.footer {
+
+
+background-color: var(--darkgrey);
+
+display: grid;
+
+    /* 3 kolonner */
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+/* -------------------- */
+/* VENSTRE SIDE */
+/* -------------------- */
+
+
+.footer-links {
+
+ padding-top: 80px;
+ padding-left: 80px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+/* Links */
+.footer-links a{
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+/* Første link */
+
+.footer-links a:first-child{
+
+    text-decoration: underline;
+    font-weight: 800;
+    font-style: normal;
+    color: gainsboro;
+}
+
+/* Når musen er over */
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------- */
+/* MIDTEN */
+/* -------------------- */
+
+.footer-midt {
+  background-color: var(--darkgrey);
+}
+
+/* -------------------- */
+/* HØJRE SIDE */
+/* -------------------- */
+
+
+.app-section {
+   background: radial-gradient(49.9% 46.71% at 50% 50%, rgba(24, 22, 22, 0.20) 16.83%, rgba(42, 39, 39, 0.20) 30.29%, rgba(36, 34, 34, 0.20) 53.37%, rgba(135, 132, 132, 0.20) 83.17%, rgba(196, 192, 192, 0.20) 100%), #2C9844;
+   padding: 40px 150px;
+ 
+
+}
+
+/* Pulse logo */
+
+.app-logo {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 30px;
+
+    background-color: var(--cream);
+    border-radius: 18px;
+    display:flex;
+   justify-content:center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.app-logo img {
+    width: 120px;
+
+}
+
+/* Pulse core overskrift */
+
+.app-section h2 {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.app-section h2:hover {
+
+text-decoration: underline;
+
+}
+
+/* Stjerner ved appen */
+
+.app-rating {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-top: 5px;
+}
+
+/* Hver app-stjerne */
+
+.app-rating img {
+    width: 22px;
+    height: 22px;
+}
+
+
+/* Teksten "1.5 tusind" */
+
+ .user-reviews {
+    margin-left: 20px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+    color: white;
+}
+
+
+/* BUTTON */
+
+
+/* App Store billede */
+
+.app-store {
+    
+width: 40px;
+height: auto;
+    margin:0;
+}
+.app-store:hover {
+    transform: scale(1.10);
+}
+
+.download-button {
+    margin-top: 50px;
+
+    padding: 12px 15px;
+
+    background-color: var(--white);
+    border: 3px solid #087cff;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--Darkgrey);
+}
+
+.download-link {
+    color: var(--darkgrey);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+ .download-link:hover {
+    text-decoration: underline;
+}
+
+
+/* -------------------- */
+/* NEDERSTE GRØNNE BJÆLKE */
+/* -------------------- */
+
+.footer-bottom {
+      grid-column: 1 / 4;
+ background-color: var(--gradientgreen1);
+ margin: 0;
+
+
+ 
+
+display: flex;
+ justify-content: space-between;
+align-items: center;
+
+}
+
+/* Copyright */
+
+.footer-bottom small {
+    font-size: 11px;
+    color: var(--white);
+}
+
+.footer-bottom a{
+
+color: var(--white);
+font-size: 11px;
+text-decoration: none;
+
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+       color: var(--green)
+}
+
+body{
+margin: 0;
+}
