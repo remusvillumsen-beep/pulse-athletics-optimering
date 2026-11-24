@@ -8,14 +8,13 @@
 }
 
 :root {
-  --black: #111111;
-  --cream: #F7F7DC;
-  --green: #2D5F3D;
-  --grey: #666666;
-  --darkgrey: #272727;
-  --gradientgreen1: #5EAB5E;
-  --gradientgreen2: #3B7D3B;
-  --white: #ffffff;
+  --primaryWhite: #F9F8F3
+  --charcoal: #3A3A3A;
+  --black: #000000;
+  --limeGreen: #CCFF00;
+  --pulseBlue: #02C4FD;
+  --pulseOrange: #FA7B04;
+  --lightGrey: #E9EDF2;
 }
 
 
