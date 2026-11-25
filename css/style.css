@@ -45,6 +45,7 @@ h1, h2, h3 {
     height: 95px;
     display: flex;
     align-items: flex-start;
+   background-image: url("../img/pulse-core-hero-vector-shapes.png");
 }
 
 #pulse-logo {
