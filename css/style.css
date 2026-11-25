@@ -558,7 +558,6 @@ box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 
-
 /* NAVIGATIONEN UNDER KOPRTENE */
 
 .benefits-navigation {
@@ -590,21 +589,27 @@ box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 
+
+
+
+
+
+
 /*------------------ */
-/*    SECTION 2     */
+/*    pulse-core sektionen  */
 /*-------------------*/
 
-
-/* ---------- VENSTRE KOLONNE ---------- */
 
 .ur-features {
   background-color: var(--cream);
   padding: 90px 60px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  display: flec;
+  flex-direction: column;
+  gap: 40px;
   margin: 0 auto;
-
+  max-width: 1400px;
+  width: 100%;
+  padding: 80px 5%;
 }
 
 .ur-venstre header{ 
@@ -628,16 +633,19 @@ margin-bottom: 30px;}
 .intro {
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 150px;
-  max-width: 400px;
-  color: var(--grey);
+  margin-bottom: 0;
+  max-width: 750px;
+  line-height: 1.5;
+  color: var(--charcoal);
   text-decoration:none;
 }
 
 /* ---------- BILLEDET AF URENE ---------- */
+
 .ur-billede img {
  width: 100%;
   max-width: 680px;
+  margin: 40px auto 0;
   display: block;
    filter: drop-shadow (0 25px 50px rgba(158, 155, 155, 0.725));
 }
