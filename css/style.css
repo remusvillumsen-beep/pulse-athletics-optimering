@@ -398,8 +398,59 @@ font-size: 20px;
      box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* puls kort farver */
+
 .pulse-card {
     color: #FFFFFF;
+}
+
+.pulse-card h3 span {
+    color: #FF8A24;
+}
+
+.pulse-card .benefit-label {
+    display: inline-flex;
+    align-self: flex-start;
+    width: fit-content;
+    background-color: #FF8A24;
+    border-radius: 30px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5); 
+    padding: 7px 14px;
+    color: #000000;
+}
+
+.pulse-card .benefit-stat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+
+    width: fit-content;
+    background-color: #FF8A24;
+    border: 2px solid;
+    border-radius: 16px;
+    padding: 14px 20px;
+    color: #000000;
+}
+
+.pulse-card .benefit-stat img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.pulse-card .benefit-stat-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.pulse-card .benefit-stat strong {
+    font-size: 25px;
+}
+
+.pulse-card .benefit-stat-text span {
+    font-size: 18px;
 }
 
 /* Vandtæthed – sort tekst */
@@ -411,6 +462,10 @@ font-size: 20px;
 .bluetooth-card {
     color: #FFFFFF;
 }
+
+
+
+
 
 /* NAVIGATIONEN UNDER KOPRTENE */
 
