@@ -412,6 +412,37 @@ font-size: 20px;
     color: #FFFFFF;
 }
 
+/* NAVIGATIONEN UNDER KOPRTENE */
+
+.benefits-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: fit-content;
+    margin: 25px auto;
+    padding: 8px 12px;
+
+    border: 1.5px solid #477A00;
+    border-radius: 50px;
+}
+
+.benefits-navigation button {
+    width: 28px;
+    height: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #D9D9D9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.benefits-navigation button[aria-current="true"] {
+    background-color: #b5dc19;
+}
+
+
 /*------------------ */
 /*    SECTION 2     */
 /*-------------------*/
