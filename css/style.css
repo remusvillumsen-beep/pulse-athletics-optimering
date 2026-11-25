@@ -53,7 +53,7 @@ h1, h2, h3 {
     display: flex;
     align-items: flex-start;
    top: 5%;
-   left: 2%;
+   left: 4%;
     width: 200px;
     height: auto;
 }
@@ -109,7 +109,7 @@ transform: scale(1.03);
 
 .hero-section {
     position: relative;
-    min-height: 75vh;
+    min-height: 90vh;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -138,16 +138,16 @@ transform: scale(1.03);
 
 .hero-content {
     left: 80px;
-    top: 90px;
+    top: 100px;
   position: absolute;
   max-width: 800px;
   z-index: 2;
 }
 
 .hero-content h1 {
-  font-size: 54px;
+  font-size: 70px;
   line-height: 0.95;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   font-weight: 800;
    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
 }
@@ -187,9 +187,9 @@ transform: scale(1.03);
 /* Billedet med de tre ure */
 .hero-watches {
   position: absolute;
-  top: 230px;
-  right: 200px;
-  max-width: 420px;
+  top: 290px;
+  right: 130px;
+  max-width: 500px;
   z-index: 2;
 }
 
@@ -198,7 +198,7 @@ transform: scale(1.03);
     margin-right: 30px;
     margin-left: -200px;
   width: 170%;
-  box-shadow(0 25px 45px rgba(0,0,0,0.8));
+  box-shadow:(0 25px 45px rgba(0,0,0,0.8));
   }
 
 
@@ -272,10 +272,11 @@ margin: 20px;
 
     padding: 10px 0;
     scrollbar-width: none;
-    padding-inline: 10%;
-    scroll-padding-inline: 10%;
+    padding-inline: 5%;
+    scroll-padding-inline: 5%;
 }
 
+ /* ------- Styling of each card ------- */
 
 .benefit-card {
   aspect-ratio: 2/1;
@@ -300,13 +301,6 @@ margin: 20px;
     scroll-snap-align: center;
 }
 
-.benefit-label img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-
 .battery-card {
     background-image: url("../img/batteritid-background.png");
 }
@@ -323,7 +317,100 @@ margin: 20px;
     background-image: url("../img/bluetooth-background.png");
 }
 
+.benefit-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.benefit-label img {
+    width: 30px;
+    height: 35px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+.benefit-card h3 {
+    font-size: 52px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-style: italic;
+     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+.benefit-card h3 span {
+    display: block;
+}
+
+.benefit-card > p:not(.benefit-label):not(.benefit-stat) {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 420px;
+     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.benefit-stat {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    font-size: 40px ;
+    margin-top: 30px;
+    margin-left:200px;
+}
+
+.benefit-stat span{
+font-size: 20px;
+
+}
+
+ /*.   forskellige farver ved hvert kort.    */
+
+.battery-card {
+    color: #000000;
+}
+.battery-card h3 span {
+    color: #477A00;
+  
+}
+.battery-card .benefit-label {
+    display: inline-flex;
+    align-self: flex-start;
+    width: fit-content;
+
+    background-color: var(--limeGreen);
+    border-radius: 30px;
+    padding: 7px 14px;
+    color: #000000;
+     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.battery-card .benefit-stat {
+    width: fit-content;
+    background-color: #CCFF00;
+    border-radius: 16px;
+    padding: 12px 25px;
+    color: #000000;
+     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.pulse-card {
+    color: #FFFFFF;
+}
+
+/* Vandtæthed – sort tekst */
+.waterproof-card {
+    color: #000000;
+}
+
+/* Bluetooth – hvid tekst */
+.bluetooth-card {
+    color: #FFFFFF;
+}
 
 /*------------------ */
 /*    SECTION 2     */
