@@ -114,6 +114,7 @@ transform: scale(1.03);
     justify-content: flex-start;
     overflow: hidden;
     padding: 0 20px 70px;
+    border-bottom: #000000 3px solid;
 }
 
 /* Videoen */
@@ -126,10 +127,9 @@ transform: scale(1.03);
   object-fit: cover;
   z-index: 0;
  opacity: 1;
- filter: saturate(0.7);
- filter:brightness(1.2);
-
- opacity: 60%;
+ filter: contrast(3);
+ opacity: 40%;
+ filter: brightness(1.3);
 }
 
 
@@ -148,13 +148,13 @@ transform: scale(1.03);
   line-height: 0.95;
   margin-bottom: 40px;
   font-weight: 800;
-   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .accent-tekst {
   color: var(--pulseBlue);
   font-weight: 800;
-   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.9);
+   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero-content .pulse-text {
@@ -162,7 +162,7 @@ transform: scale(1.03);
   color: var(--charcoal);
   margin-bottom: 40px;
   line-height: 1.5;
-   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   
 }
 
@@ -173,7 +173,7 @@ transform: scale(1.03);
   line-height: 2;
   color: var(--black);
   font-weight: 800;
-   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content h1,
