@@ -7,7 +7,7 @@
 }
 
 :root {
-  --primaryWhite: #F9F8F3
+  --primaryWhite: #F9F8F3;
   --charcoal: #3A3A3A;
   --black: #000000;
   --limeGreen: #CCFF00;
@@ -22,12 +22,14 @@ body {
   color: var(--black);
   font-family: 'Inter', sans-serif;
   margin: 0;
+  background-color: var(--primaryWhite);
 }
 
 .content-wrapper{
 max-width: 1920px;
 width: 100%;
 margin: 0 auto;
+background-color: var(--primaryWhite);
 }
 
 h1, h2, h3 {
@@ -212,55 +214,74 @@ transform: scale(1.03);
 
 
 
-/* ---------- SPECS-STRIP  ---------- */
+/* ---------- Benefits Track  ---------- */
 
-.specs-strip {
-    background-color: rgba(45, 95, 61, 0.06);
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    justify-content: space-around;
-    padding: 0;
-    margin: 0 0 60px 0;
-    gap: 30px;
-    margin-bottom: 2px;
-    border-top: 2px solid rgba(45, 95, 61, 0.15);
-    border-bottom: 2px solid rgba(45, 95, 61, 0.15);
+.product-benefits{
+background-color: var(--primaryWhite);
+margin: 20px;
+
 }
 
-.specs-strip li {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  gap: 4px;
-  padding: 20px 0;
-  border-right: 1px solid rgba(45, 95, 61, 0.2);
+.benefits-track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+   
+
+    padding: 10px 0;
+    scrollbar-width: none;
+    padding-inline: 10%;
+    scroll-padding-inline: 10%;
 }
 
-.specs-strip li:last-child {
-  border-right: none;
+
+.benefit-card {
+    flex: 0 0 90%;
+    aspect-ratio: 2.28 / 1;
+    min-height: 0;
+
+    padding: 35px;
+    border-radius: 16px;
+
+    position: relative;
+    overflow: hidden;
+  
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+
+    scroll-snap-align: center;
 }
 
-.specs-strip img {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  margin-bottom: 8px;
+.benefit-label img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
- .spec-tal {
-  font-weight: 700;
-  font-size: 22px;
-  margin: 0;
-  color: var(--green);
+.battery-card {
+    background-image: url("../img/batteritid-background.png");
 }
 
-.spec-label {
-  font-size: 13px;
-  color: var(--grey);
-  margin: 4px 0 0 0;
+.pulse-card {
+    background-image: url("../img/pulsmaaling-background.png");
 }
+
+.waterproof-card {
+    background-image: url("../img/vandtaethed-background.png");
+}
+
+.bluetooth-card {
+    background-image: url("../img/bluetooth-background.png");
+}
+
 
 
 /*------------------ */
