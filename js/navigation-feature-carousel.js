@@ -2,22 +2,30 @@ const track = document.querySelector(".benefits-track");
 const cards = document.querySelectorAll(".benefit-card");
 const buttons = document.querySelectorAll(".benefits-navigation button");
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            const index = Array.from(cards).indexOf(entry.target);
+track.addEventListener("scroll", () => {
 
-            buttons.forEach((button, i) => {
-                button.setAttribute(
-                    "aria-current",
-                    i === index ? "true" : "false"
-                );
-            });
+    const trackCenter = track.getBoundingClientRect().left + track.clientWidth / 2;
+
+    let closestCard = 0;
+    let closestDistance = Infinity;
+
+    cards.forEach((card, index) => {
+
+        const cardCenter = card.getBoundingClientRect().left + card.offsetWidth / 2;
+        const distance = Math.abs(trackCenter - cardCenter);
+
+        if (distance < closestDistance) {
+            closestDistance = distance;
+            closestCard = index;
         }
-    });
-}, {
-    root: track,
-    threshold: 0.6
-});
 
-cards.forEach((card) => observer.observe(card));
+    });
+
+    buttons.forEach((button, index) => {
+        button.setAttribute(
+            "aria-current",
+            index === closestCard ? "true" : "false"
+        );
+    });
+
+});
