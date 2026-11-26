@@ -103,6 +103,11 @@ transform: scale(1.03);
     font-size: 17px;
 }
 
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
+
+
+
 /*---------------*/
 /* HERO SECTION */
 /*-------------*/
@@ -226,11 +231,14 @@ transform: scale(1.03);
 }
 
 
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /* ---------- Benefits Track  ---------- */
 
 .product-benefits{
 margin: 20px;
+border-bottom: 2px solid black;
 }
 
 .benefits-heading {
@@ -589,10 +597,7 @@ box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 
-
-
-
-
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 /*------------------ */
@@ -601,33 +606,37 @@ box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
 
 
 .ur-features {
-  background-color: var(--cream);
-  padding: 90px 60px;
   display: flec;
   flex-direction: column;
   gap: 40px;
   margin: 0 auto;
   max-width: 1400px;
   width: 100%;
-  padding: 80px 5%;
+  padding: 55px 5%;
 }
 
-.ur-venstre header{ 
+.ur-header{ 
 margin-bottom: 30px;}
 
+.ur-header span {
+color: var(--pulseBlue);
+text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+}
 
 #pulse-label {
-  font-size: 40px;
+  font-size: 52px;
     white-space: nowrap;
     color: var(--green);
     margin-bottom: 8px;
     font-weight: 700;
 }
 
-#uret-der {
+#pulse-tagline {
   font-size: 32px;
   margin-bottom: 20px;
  white-space: nowrap;
+ font-weight: 600;
+ color: var(--charcoal);
 }
 
 .intro {
@@ -661,8 +670,6 @@ margin-bottom: 30px;}
     margin-top: 30px;
 }
 
-
-
 .color-option p {
     font-size: 24px;
     font-weight: 600;
@@ -671,8 +678,6 @@ margin-bottom: 30px;}
     color: var(--black);
 
 }
-
-    
 
 .color-option button {
     width: 38px;
@@ -701,6 +706,8 @@ margin-bottom: 30px;}
     border: 2px solid var(--pulseOrange);
 }
 
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 /* ---------- APP ---------- */
@@ -780,6 +787,10 @@ text-decoration: underline;
   width: 200px;
   filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.3));
 }
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 /* BRUGER ANMELDELSER*/
@@ -873,7 +884,7 @@ height: 60px;
   font-weight: 600;
 }
 
-
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* -------------------- */
 /* HELE FOOTEREN */
